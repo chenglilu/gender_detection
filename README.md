@@ -26,18 +26,18 @@ python3 train.py ENSEMBLE
 ## notebook
 users also can run the 'gender-detection.ipynb' to check training and result 
 
-## Model deployment
-1.how to run inference.py to see some examples
+# Model deployment
+## Inference
 ```
 python3 inference.py
 ```
 
-2.Flask app
+## Flask app
 ```
 python3 app.py
 ```
 
-3.dockerfile
+## dockerfile
 ```
 docker build -t gender_detection:1.0 .
 ```
