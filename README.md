@@ -33,18 +33,24 @@ python3 inference.py
 ```
 
 ## Flask app
+run the app.py to build the flash app. need use postman to test the app, , and api address: http://127.0.0.1:5000/inference. post a json content:{"name":"Joe"}'
+
 ```
 python3 app.py
 ```
 
 ## dockerfile
+1. Build the image
 ```
 docker build -t gender_detection:1.0 .
 ```
-
+2. Run the app
 ```
 docker run -p 5000:5000 gender_detection:1.0
 ```
-
+3. Test
+```
+curl -X POST http://127.0.0.1:5000/inference -H 'Content-Type:application/json' -d '{"name":"Joe"}'
+```
 
 

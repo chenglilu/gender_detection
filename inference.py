@@ -2,7 +2,6 @@ from tensorflow.keras.models import load_model
 import pandas as pd
 import numpy as np
 from train import data_encode
-import joblib
 
 
 names = ['Joe', 'Biden', 'Kamala', 'Harris']
