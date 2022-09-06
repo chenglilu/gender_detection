@@ -120,7 +120,7 @@ def train_lstm(args):
 
     X_train, X_test, y_train, y_test = train_test_split(X,
                                                         y,
-                                                        test_size=0.2,
+                                                        test_size=0.1,
                                                         random_state=0,
                                                         stratify=y                                                
                                                     )
@@ -165,7 +165,7 @@ def train_ensemble(args):
     y = np.asarray(df['gender'].values.tolist())
     X_train, X_test, y_train, y_test = train_test_split(X,
                                                         y,
-                                                        test_size=0.2,
+                                                        test_size=0.1,
                                                         random_state=0,
                                                         stratify=y                                                
                                                     )

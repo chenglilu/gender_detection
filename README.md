@@ -5,7 +5,7 @@ pip3 install -r requirements.txt
 ```
 
 ## LSTM model
-I build the Long short-term memory model using Tensorflow. it take 20-30 minutes. There are some overfiting after 30 epochs, so we can early stop at 30. The best accuracy of training is 0.91, and accuracy of validation is 0.90.
+I build the Long short-term memory model using Tensorflow. it take 20-30 minutes. There are some overfiting after 30 epochs, so we can early stop at 30. The best accuracy of training is 0.92, and accuracy of validation is 0.91.
 ```
 python3 train.py LSTM 
 ```
